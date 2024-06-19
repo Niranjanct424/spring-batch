@@ -2,8 +2,11 @@ spring:
   datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    url: jdbc:mysql://localhost:3306/productapp
+    url: jdbc:mysql://localhost:3306/spring_batch
     password: Glamour@12
+#  batch:
+#    jdbc:
+#      initialize-schema: always
 #  jpa:
 #    properties:
 #      hibernate:

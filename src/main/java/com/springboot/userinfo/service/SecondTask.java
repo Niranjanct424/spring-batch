@@ -12,6 +12,7 @@ public class SecondTask implements Tasklet{
 	@Override
 	public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
 		System.out.println("Second task executed from service layer customization");
+		System.out.println(chunkContext.getStepContext().getJobExecutionContext());
 		return RepeatStatus.FINISHED;
 	}
 

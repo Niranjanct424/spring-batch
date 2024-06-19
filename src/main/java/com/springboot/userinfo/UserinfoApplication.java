@@ -9,7 +9,8 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableBatchProcessing
-@ComponentScan({"com.springboot.userinfo.config","com.springboot.userinfo.service"})
+@ComponentScan({"com.springboot.userinfo.config","com.springboot.userinfo.service","com.springboot.userinfo.listener",
+		"com.springboot.userinfo.reader","com.springboot.userinfo.writer","com.springboot.userinfo.processor"})
 public class UserinfoApplication {
 
 	public static void main(String[] args) {
